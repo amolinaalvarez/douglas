@@ -26,12 +26,12 @@ public class LoginTest extends TestBase {
 	}
 	
 	@BeforeMethod(alwaysRun = true)
-    public void setUp() {
+    	public void setUp() {
 		super.setUp();
 		PublicPage publicPage = new PublicPage(driver);
 		publicPage.acceptCookies();
 		publicPage.goToLoginPage();
-    }
+    	}
 
 	@Test(description = "As an user with correct credentials I would like to be able to login to the webshop", groups = {
 			"regression" }, dataProvider = "validCredentials")
