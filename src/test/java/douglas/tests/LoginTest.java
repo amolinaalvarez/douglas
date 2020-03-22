@@ -28,8 +28,7 @@ public class LoginTest extends TestBase {
 	@BeforeMethod(alwaysRun = true)
     public void setUp() {
 		super.setUp();
-		System.out.println("Hola usuario bienvenido test");
-    	PublicPage publicPage = new PublicPage(driver);
+		PublicPage publicPage = new PublicPage(driver);
 		publicPage.acceptCookies();
 		publicPage.goToLoginPage();
     }
@@ -49,7 +48,7 @@ public class LoginTest extends TestBase {
 	public void loginKOTest(String email, String password) {
 		LoginPage loginPage = new LoginPage(driver);
 		loginPage.login(email, password);
-		assertTrue(loginPage.areErrorsShown());
+		assertTrue(loginPage.isErrorShown());
 	}
 
 	@Test(description = "As a user, I would like to be able to reset my password if I forget my credentials.", groups = {
