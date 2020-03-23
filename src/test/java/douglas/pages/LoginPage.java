@@ -8,8 +8,8 @@ import douglas.utils.PageBase;
 public class LoginPage extends PageBase {
 
 	public LoginPage(WebDriver driver) {
-        super(driver);
-    }
+		super(driver);
+	}
 
 	private By emailField = By.name("email");
 	private By passwordField = By.name("password");

@@ -9,7 +9,7 @@ public class PrivatePage extends PageBase {
 
 	public PrivatePage(WebDriver driver) {
 		super(driver);
-    }
+	}
 
 	private By navigation = By.cssSelector("[data-wt-component='Navigation']");
 	private By welcomeDiv = By.cssSelector("[data-wt-component='welcome']");

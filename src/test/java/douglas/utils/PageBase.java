@@ -11,10 +11,10 @@ public class PageBase {
 
 	public PageBase(WebDriver driver) {
 		this.driver = driver;
-    }
+	}
 
 	protected void waitForElementVisible(By by) {
-        new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOfElementLocated(by));
-    }
+		new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOfElementLocated(by));
+	}
 
 }

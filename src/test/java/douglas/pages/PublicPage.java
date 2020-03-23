@@ -7,11 +7,11 @@ import douglas.utils.PageBase;
 
 public class PublicPage extends PageBase {
 
-	public PublicPage(WebDriver driver) {
-		super(driver);
+    public PublicPage(WebDriver driver) {
+        super(driver);
     }
 
-	private By loginPageLink = By.cssSelector("a[href*='/mydouglas/index.html']");
+    private By loginPageLink = By.cssSelector("a[href*='/mydouglas/index.html']");
     private By cookiesButton = By.cssSelector("[data-wt-component='cookie.ok']");
 
     public String getPageTitle() {
