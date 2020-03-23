@@ -19,11 +19,11 @@ public class PublicPage extends PageBase {
     }
 
     public void goToLoginPage() {
-    	driver.findElement(loginPageLink).click();
+        driver.findElement(loginPageLink).click();
     }
 
     public void acceptCookies() {
-    	driver.findElement(cookiesButton).click();
+        driver.findElement(cookiesButton).click();
     }
 }
 

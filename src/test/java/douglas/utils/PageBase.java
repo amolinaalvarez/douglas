@@ -7,14 +7,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class PageBase {
 
-	protected WebDriver driver;
+    protected WebDriver driver;
 
-	public PageBase(WebDriver driver) {
-		this.driver = driver;
-	}
+    public PageBase(WebDriver driver) {
+	    this.driver = driver;
+    }
 
-	protected void waitForElementVisible(By by) {
-		new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOfElementLocated(by));
-	}
+    protected void waitForElementVisible(By by) {
+        new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOfElementLocated(by));
+    }
 
 }

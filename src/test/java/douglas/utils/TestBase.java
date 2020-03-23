@@ -11,17 +11,17 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase extends DriverFactory {
 
-	// TODO: Move this URL to the configuration file
-	private static final String URL = "https://www.douglas.de";
+    // TODO: Move this URL to the configuration file
+    private static final String URL = "https://www.douglas.de";
 
     protected WebDriver driver = null;
     private static final long IMPLICIT_TIME = 5;
 
     @BeforeClass
-	public static void setUpClass() {
-    	WebDriverManager.chromedriver().setup();
-    	WebDriverManager.firefoxdriver().setup();
-	}
+    public static void setUpClass() {
+        WebDriverManager.chromedriver().setup();
+        WebDriverManager.firefoxdriver().setup();
+    }
 
     @BeforeMethod(alwaysRun = true)
     public void setUp() {
