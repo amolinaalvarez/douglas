@@ -10,7 +10,7 @@ public class PageBase {
     protected WebDriver driver;
 
     public PageBase(WebDriver driver) {
-	    this.driver = driver;
+        this.driver = driver;
     }
 
     protected void waitForElementVisible(By by) {

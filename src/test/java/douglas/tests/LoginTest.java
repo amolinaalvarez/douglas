@@ -34,7 +34,7 @@ public class LoginTest extends TestBase {
     }
 
     @Test(description = "As an user with correct credentials I would like to be able to login to the webshop", groups = {
-			"regression" }, dataProvider = "validCredentials")
+            "regression" }, dataProvider = "validCredentials")
     public void loginOKTest(String email, String password) {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login(email, password);
