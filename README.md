@@ -3,7 +3,7 @@
 The goal of this repository is to create automated test cases with Selenium and Java, so we are able to test the main functionality on regression.
 
 
-## Tech Stack
+## Tech Stack and tools
 * Java
 * Maven
 * Selenium/WebDriver
